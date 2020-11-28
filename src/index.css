@@ -1,13 +1,177 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
+  --primary-color: #f68b55;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset */
+a:hover {
+  color: inherit !important;
+}
+/*Global Styles*/
+.section-block {
+  padding: 25px 0;
+  padding-top: 35px;
+}
+/* Header */
+.header {
+  /* clip-path: circle(77.4% at 67% 36%); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 32%,
+    100% 88%,
+    68% 100%,
+    32% 100%,
+    6% 79%,
+    0 45%,
+    0 0
+  );
+}
+.header .header_inner {
+  --links-color: #fff;
+  color: var(--links-color);
+  box-sizing: border-box;
+  padding: 20px 0;
+  height: 85vh;
+  min-height: 550px;
+  background: #00101dbd;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-collapse {
+  width: auto;
+}
+.header .navbar-brand {
+  font-weight: 700;
+  color: var(--links-color);
+  font-size: 32px;
+}
+.header .navbar-custom .nav-item .nav-link {
+  text-transform: uppercase;
+  color: var(--links-color);
+  font-weight: 300;
+  padding: 8px 15px;
+}
+.header .navbar-custom .nav-item .nav-link:hover {
+  background: #00000030;
+  color: var(--primary-color) !important;
+}
+.header .action-button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 11px;
+  padding: 6px 11px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 15px;
+  transition: 0.1s all ease-in-out;
+}
+.header .action-button:hover {
+  background-color: #fff;
+  color: #2b2b2bfa;
+}
+/* Header Content*/
+.header .header_content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header_content .content-inner {
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+.header .header_content .header_title {
+  /* padding: 6px 0; */
+  margin-bottom: 15px;
+  /* font-size: 32px;
+  font-weight: 700; */
+}
+.btn.btn-primary {
+  border-radius: 0;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+/* Main Content */
+/* Services Section*/
+.section-block .section-block__text .title {
+  color: var(--primary-color);
+}
+.section-block .section-block__text .text {
+  max-width: 55%;
+  font-size: 15px;
+}
+
+.section-block .section-block__content {
+  margin-top: 15px;
+}
+.services-block .services__item {
+  padding: 15px;
+}
+.services-block .services__item .service_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s box-shadow ease-in-out;
+}
+.services-block .services__item .service_bg:hover {
+  box-shadow: 1px 2px 8px 1px rgb(156 156 156 / 53%);
+}
+.services-block .services__item .service__inner {
+  height: 260px;
+  background: rgb(0 0 0 / 55%);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.services-block .services__item svg {
+  height: 50px;
+}
+/* About Us Section */
+.aboutus-block {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 55px;
+}
+.aboutus-block .container {
+  min-height: 380px;
+}
+.about__box {
+  padding: 25px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.77);
+  min-height: 365px;
+  border-radius: 4px;
+}
+.about__box .title {
+  max-width: 75%;
+}
+.about__box .desc {
+  font-size: 16px;
+  max-width: 85%;
+  text-transform: lowercase;
+}
+.about__box .btn {
+  margin-top: 20px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+  padding: 8px 16px;
+}
+.about__box .btn:hover {
+  background-color: rgba(255, 255, 255, 0.85);
 }
