@@ -19,7 +19,7 @@ function AboutUs() {
               it happends, Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </div>
-            <button type="button" class="btn btn-secondary fw-bolder fs-6">
+            <button type="button" className="btn btn-secondary fw-bolder fs-6">
               SHOW MORE
             </button>
           </div>

@@ -145,7 +145,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
 }
 .aboutus-block .container {
   min-height: 380px;
@@ -174,4 +174,24 @@ a:hover {
 }
 .about__box .btn:hover {
   background-color: rgba(255, 255, 255, 0.85);
+}
+/* Our Projects */
+.projects-block .section__title .desc {
+  max-width: 80%;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 300;
+}
+.projects-block .project_item {
+  padding: 12px;
+}
+.projects-block .project_item img {
+  transition: 0.12s box-shadow ease-in-out;
+}
+.projects-block .project_item img:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+}
+.projects-block .active_project {
+  padding: 15px;
 }
