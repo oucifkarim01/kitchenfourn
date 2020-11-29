@@ -56,6 +56,10 @@ function OurProjects() {
             </div>
           </div>
         </div>
+        <div className="buttons">
+          <div className="btn up_btn">U</div>
+          <div className="btn up_btn">D</div>
+        </div>
       </div>
     </div>
   );
