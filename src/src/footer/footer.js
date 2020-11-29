@@ -100,13 +100,13 @@ function Footer() {
                           <a href="/">Home</a>
                         </li>
                         <li>
-                          <a href="">Products</a>
+                          <a href="#">Products</a>
                         </li>
                         <li>
-                          <a href="">Contact Us</a>
+                          <a href="#">Contact Us</a>
                         </li>
                         <li>
-                          <a href="">About Us</a>
+                          <a href="#">About Us</a>
                         </li>
                       </ul>
                     </div>
