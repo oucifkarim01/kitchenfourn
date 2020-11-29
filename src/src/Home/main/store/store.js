@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const products = [
   {
     name: "Fourn1",
@@ -27,7 +29,7 @@ function Store() {
               <div className="section_title">
                 <div className="text text-center fs-2">Our Store :</div>
               </div>
-              <div className="section_content row">
+              <Link to="/product" className="section_content row">
                 {products.map(({ name, picture }) => (
                   <div key={name} className="col-md-3 product__item">
                     <div
@@ -42,7 +44,7 @@ function Store() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </Link>
               <div className="row">
                 <a
                   href="#products"
