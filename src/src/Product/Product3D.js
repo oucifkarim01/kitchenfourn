@@ -6,7 +6,7 @@ function Product3D() {
           src={`${process.env.PUBLIC_URL}/assets/models/Horse.glb`}
           alt="Horse Model"
           ar
-          ar-modes="scene-viewer webxr"
+          ar-modes="webxr scene-viewer quick-look"
           ar-scale="auto"
           loading="lazy"
           auto-rotate
