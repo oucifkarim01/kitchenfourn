@@ -13,14 +13,14 @@ function ProductHeader() {
         </Link>
       </div>
       <div className="row  m-0">
-        <div className="col-6 product_feature d-flex justify-content-center align-items-center">
+        <div className="col-md-6 product_feature d-flex justify-content-center align-items-center">
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/product1.png`}
             className="img-fluid product_img"
             alt="Product Name Alternative"
           />
         </div>
-        <div className="col-6 product_info d-flex align-items-center ">
+        <div className="col-md-6 product_info d-flex align-items-center ">
           <div className="info_inner">
             <div className="text text-primary product_name fs-3 fw-bold">
               Product Name 2
