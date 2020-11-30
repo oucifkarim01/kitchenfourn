@@ -1,15 +1,13 @@
 function Product3D() {
   return (
     <div className="fluid-container viewer_blocck">
-      <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf&mode=3d_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
-        Avocado
-      </a>
-      ;
       <div className="container" style={{ width: "100%", height: "500px" }}>
         <model-viewer
           src={`${process.env.PUBLIC_URL}/assets/models/Horse.glb`}
           alt="Horse Model"
           ar
+          ar-modes="scene-viewer webxr"
+          ar-scale="auto"
           loading="lazy"
           auto-rotate
           camera-controls
