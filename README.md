@@ -1,5 +1,5 @@
 # Live Preview :
-Open [https://flamboyant-pike-372e83.netlify.app/](Live Preview) .
+Open [Live Preview](https://flamboyant-pike-372e83.netlify.app/) .
 
 # Getting Started with Create React App
 
